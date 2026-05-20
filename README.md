@@ -28,7 +28,7 @@ outputs/nir_cnn_embedding/
 
 1. GitHub repoをcloneまたはpullします。
 2. `pip install -r requirements.txt` を実行します。
-3. ColabではGoogle Driveをmountし、`マイドライブ/nir_project/data/train.csv` と `test.csv` を配置します。
+3. `data/train.csv` と `data/test.csv` を配置します。
 4. `notebooks/10_run_cnn_embedding_experiment.ipynb` からscriptを実行します。
 
 Private GitHub repoは `https://github.com/2Kentaro1/wood-moisture-model-cnn.git` を使います。`notebooks/00_colab_setup.ipynb` でtokenを入力するとclone/pullできます。
@@ -37,8 +37,8 @@ Private GitHub repoは `https://github.com/2Kentaro1/wood-moisture-model-cnn.git
 
 ```bash
 python scripts/run_cnn_embedding_experiment.py \
-  --train-path /content/drive/MyDrive/nir_project/data/train.csv \
-  --test-path /content/drive/MyDrive/nir_project/data/test.csv \
+  --train-path data/train.csv \
+  --test-path data/test.csv \
   --output-dir outputs/nir_cnn_embedding \
   --band full \
   --embedding-dim 16 \

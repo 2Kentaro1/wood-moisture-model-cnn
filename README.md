@@ -16,9 +16,7 @@ data/
   train.csv
   test.csv
 notebooks/
-  00_colab_setup.ipynb
-  10_run_cnn_embedding_experiment.ipynb
-  20_analyze_cnn_results.ipynb
+  nir_cnn_embedding_experiment.ipynb
 src/nir_mc/
 scripts/
 outputs/nir_cnn_embedding/
@@ -26,10 +24,11 @@ outputs/nir_cnn_embedding/
 
 ## Colab Setup
 
-1. Google Colab Webで `notebooks/00_colab_setup.ipynb` を開き、GitHubからpublic repoをcloneまたはpullします。
-2. `pip install -r requirements.txt` を実行します。
+1. Google Colab Webで `notebooks/nir_cnn_embedding_experiment.ipynb` を直接開きます。
+   `https://colab.research.google.com/github/2Kentaro1/wood-moisture-model-cnn/blob/main/notebooks/nir_cnn_embedding_experiment.ipynb`
+2. 先頭セルを実行してGitHubからpublic repoをclone/pullし、requirementsをinstallします。
 3. cloneされたrepo直下の `data/` に `train.csv` と `test.csv` を配置します。
-4. `notebooks/10_run_cnn_embedding_experiment.ipynb` からscriptを実行します。
+4. 実験実行セルからscriptを実行します。
 
 GitHub repoは `https://github.com/2Kentaro1/wood-moisture-model-cnn.git` を使います。public repoなのでtokenなしでclone/pullできます。
 
